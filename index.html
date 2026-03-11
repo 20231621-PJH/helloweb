@@ -1,20 +1,99 @@
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML TAG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-<head>
-	<title> My First Webpage </title>
-
-	<script>
-		alert('박준한님 반갑습니다');
-	</script>
 
 
-	<style>
-		h1{ color: red ; }
-	</style>
-</head>
+  </head>
+  <body>
+    <h2>HTML 태그</h2>
 
-<body>
-	<h1>Hello World!!</h1>
-</body>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">태그</th>
+                <th scope="col">설명</th>
+                <th scope="col">예시</th>
+            </tr>
+        </thead>
 
+        <tbody>
+            <tr>
+                <th scope="row">&lt;!-- --&gt;</th>
+                <td>주석을 정의</td>
+                <td>&lt;!--이 구간은 실행이 안됩니다.--&gt;</td>
+            </tr>
+
+            <tr>
+                <th scope="row">&lt;!DOCTYPE&gt;</th>
+                <td>해당 문서의 타입을 정의</td>
+                <td>&lt;!DOCTYPE HTML&gt;</td>
+            </tr>
+
+            <tr>
+                <th scope="row">&lt;body&gt;</th>
+                <td>해당 문서의 콘텐츠 영역을 정의</td>
+                <td>&lt;body&gt;HTML문서의 콘텐츠 영역입니다.&lt;/body&gt;</td>
+            </tr>
+
+            <tr>
+                <th scope="row">&lt;br&gt;</th>
+                <td>텍스트 내의 줄바꿈을 정의, 종료 태그가 없다.</td>
+                <td>안녕&lt;br&gt;반가워</td>
+            </tr>
+
+            <tr>
+                <th scope="row">&lt;button&gt;</th>
+                <td>클릭할 수 있는 버튼을 정의</td>
+                <td>&lt;button type="submit"&gt;등록완료&lt;/button&gt;</td>
+            </tr>
+
+            <tr>
+                <th scope="row">&lt;div&gt;</th>
+                <td>HTML문서에서 특정 영역이나 구획을 정의</td>
+                <td>&lt;div&gt;{background-color: orange;}&lt;/div&gt;</td>
+            </tr>
+
+            <tr>
+                <th scope="row">&lt;h1&gt;~&lt;h6&gt;</th>
+                <td>HTML문서에서 제목을 정의, &lt;h1&gt;요소가 가장 중요한 제목</td>
+                <td>&lt;h1&gt;이 텍스트는 h1요소를 사용한 제목입니다.&lt;/h1&gt;</td>
+            </tr>
+
+            <tr>
+                <th scope="row">&lt;html&gt;</th>
+                <td>HTML문서의 루트 요소를 정의</td>
+                <td>&lt;html lang ="ko"&gt;</td>
+            </tr>
+
+            <tr>
+                <th scope="row">&lt;input&gt;</th>
+                <td>사용자로부터 입력을 받을 수 있는 입력 필드를 정의</td>
+                <td>&lt;input type = "text" name="st_name"&gt;</td>
+            </tr>
+
+            <tr>
+                <th scope="row">&lt;label&gt;</th>
+                <td>사용자 인터페이스 요소의 라벨을 정의.<br> for속성을 사용해 다른 요소와 결합할 수 있으며, for속성값은 결합하고자 하는 요소의 id속성값과 같아야한다.</td>
+                <td>&lt;input type="radio" name="ages" id="twenty" value="twenties"&gt;<br>&lt;label for="twenty"&gt;20대&lt;/label&gt;</td>
+            </tr>
+
+            <tr>
+                <th scope="row">&lt;title&gt;</th>
+                <td>해당 문서의 제목을 정의</td>
+                <td>&lt;title&gt;HTML문서의 제목입니다.&lt;/title&gt;</td>
+            </tr>
+
+        </tbody>
+  
+  
+    </table>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 </html>
